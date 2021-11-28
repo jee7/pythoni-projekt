@@ -6,8 +6,8 @@ aken = pygame.display.set_mode([640, 480])
 mäng_töötab = True
 
 lind = pygame.image.load("tom.png")
-linnu_x = 10
-linnu_y = 200
+linnu_x = 0
+linnu_y = 0
 
 while mäng_töötab:
     hiire_x, hiire_y = pygame.mouse.get_pos()
@@ -18,7 +18,7 @@ while mäng_töötab:
     linnu_x = hiire_x
     linnu_y = hiire_y
 
-    aken.fill([0, 0, 0])
+    aken.fill([255, 255, 255])
     aken.blit(lind, [linnu_x, linnu_y])
     pygame.display.flip()
 
