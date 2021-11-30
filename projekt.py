@@ -18,8 +18,9 @@ while mäng_töötab:
     linnu_x = hiire_x
     linnu_y = hiire_y
 
-    aken.fill([255, 0, 0])
+    aken.fill([255, 255, 255])
     aken.blit(lind, [linnu_x, linnu_y])
     pygame.display.flip()
 
+print("Mäng läbi")
 pygame.quit()
